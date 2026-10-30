@@ -1,0 +1,6 @@
+{
+  "name": "Telemetry Dispatch Matrix",
+  "description": "High-velocity logistics operations and mission-critical fleet telemetry dispatch matrix console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,231 @@
+---
+name: Telemetry Dispatch Matrix
+colors:
+  surface: '#0f131c'
+  surface-dim: '#0f131c'
+  surface-bright: '#353942'
+  surface-container-lowest: '#0a0e16'
+  surface-container-low: '#181c24'
+  surface-container: '#1c2028'
+  surface-container-high: '#262a33'
+  surface-container-highest: '#31353e'
+  on-surface: '#dfe2ee'
+  on-surface-variant: '#bbcabf'
+  inverse-surface: '#dfe2ee'
+  inverse-on-surface: '#2c3039'
+  outline: '#86948a'
+  outline-variant: '#3c4a42'
+  surface-tint: '#4edea3'
+  primary: '#4edea3'
+  on-primary: '#003824'
+  primary-container: '#10b981'
+  on-primary-container: '#00422b'
+  inverse-primary: '#006c49'
+  secondary: '#4cd7f6'
+  on-secondary: '#003640'
+  secondary-container: '#03b5d3'
+  on-secondary-container: '#00424e'
+  tertiary: '#c0c1ff'
+  on-tertiary: '#1000a9'
+  tertiary-container: '#9699ff'
+  on-tertiary-container: '#1d17b2'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#6ffbbe'
+  primary-fixed-dim: '#4edea3'
+  on-primary-fixed: '#002113'
+  on-primary-fixed-variant: '#005236'
+  secondary-fixed: '#acedff'
+  secondary-fixed-dim: '#4cd7f6'
+  on-secondary-fixed: '#001f26'
+  on-secondary-fixed-variant: '#004e5c'
+  tertiary-fixed: '#e1e0ff'
+  tertiary-fixed-dim: '#c0c1ff'
+  on-tertiary-fixed: '#07006c'
+  on-tertiary-fixed-variant: '#2f2ebe'
+  background: '#0f131c'
+  on-background: '#dfe2ee'
+  surface-variant: '#31353e'
+typography:
+  headline-xl:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  telemetry-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.02em
+  telemetry-md:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: 18px
+    letterSpacing: -0.01em
+  telemetry-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0em
+  label-caps:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 0.75rem
+  gutter-lg: 1rem
+  margin: 1rem
+  margin-lg: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1rem
+  space-xl: 1.5rem
+---
+
+## Brand & Style
+
+This design system targets high-velocity logistics operators, fleet controllers, and dispatch commanders who manage complex real-time physical operations under strict SLAs. The operational environment demands instantaneous situational awareness, high-stress visual clarity, and near-zero cognitive friction.
+
+The aesthetic fuses **Mission-Critical Telemetry** with **High-Density Enterprise SaaS**. It prioritizes technical precision, high-contrast visual cues, compact data density, and explicit status isolation. 
+
+- **Key Visual Pillars:**
+  - **Surgical Precision:** Strict 1px hairline structural boundaries and monospaced telemetry tokens ensure values align without optical drift.
+  - **Information Density:** Compact paddings, structured grid hierarchies, and low vertical footprint elements to maximize screen utilization on multi-display setups.
+  - **Functional Luminance:** Dark slate backdrops suppress ambient eye fatigue while high-energy accent emitters (emerald, amber, cyan, crimson) command rapid optical triage.
+
+## Colors
+
+The palette is engineered for pure contrast efficiency and dark-room operational monitoring. Background surfaces employ deep obsidian and cold slate tiers, ensuring that chromatic signals immediately stand out as operational states rather than decorative embellishments.
+
+### Palette Hierarchy
+- **Canvas Base (`#0B0F17`):** Deepest structural canvas for background viewports, map underlays, and grid foundations.
+- **Surface Elevation 1 (`#111827`):** Base panels, table containers, sidebar rails, and persistent operational modules.
+- **Surface Elevation 2 (`#1E293B`):** Interactive card cells, modal panels, table headers, and hovered rows.
+- **Hairline Borders (`#334155`):** Explicit 1px partition boundaries for grid isolation without visual bloat.
+
+### Semantic Telemetry Signals
+- **Primary / Nominal (`#10B981`):** Electric Emerald. Indicates active routes, optimal courier pacing, completed drops, and healthy SLAs.
+- **Secondary / Trajectory (`#06B6D4`):** Electric Cyan. Designates active navigation paths, fleet GPS breadcrumbs, and live connection pings.
+- **Tertiary / Assignment (`#6366F1`):** Vivid Indigo. Used for driver dispatch queues, pending handoffs, and system-level operations.
+- **Warning / Degraded (`#F59E0B`):** Vivid Amber. Denotes approaching SLA deadlines, courier hold-ups, and pending dispatch gates.
+- **Critical Alert (`#EF4444`):** Pure Crimson. Reserved strictly for SLA violations, geofence breaches, SOS triggers, and vehicle breakdowns.
+- **Text Tokens:** 
+  - High Emphasis: `#F8FAFC`
+  - Medium Emphasis (Metadata, labels): `#94A3B8`
+  - Low Emphasis (Disabled, hairpins): `#64748B`
+
+## Typography
+
+The typographic hierarchy utilizes a dual-engine architecture:
+1. **Primary Interface (`Inter`):** Handles operational labels, contextual headers, modal dialogues, and user actions. Employs tighter tracking at larger scales to maintain screen economy.
+2. **Telemetry Engine (`JetBrains Mono`):** Dedicated to mission data: GPS coordinates, countdown clocks, courier vehicle IDs, speed indicators, ETA deltas, and tabular cell records. Monospaced tabular figures prevent visual jitter during real-time web-socket updates.
+
+### Usage Rules
+- `label-caps` must always be rendered uppercase for table column titles, status section heads, and badge categorizations.
+- Numerical measurements (e.g., `4.2 km`, `00:14:32`, `lat/long`) must strictly use `telemetry-*` tokens.
+- Keep line heights tightly contained to avoid vertical inflation across dense layouts.
+
+## Layout & Spacing
+
+The layout is built for mission control consoles, splitting space between fixed data sidebars, interactive mapping panels, and telemetry tables.
+
+### Layout Philosophy
+- **Split-Screen Ergonomics:** Desktop displays default to a persistent 3-column architecture:
+  - Left Panel: Fixed 320px–360px dispatch list and pending alert stack.
+  - Center Viewport: Fluid map/route geospatial visualizer.
+  - Right Drawer / Collapsible: Dynamic detail pane for driver profiles, stop sequences, and telemetry feeds.
+- **Adaptive Breakpoints:**
+  - **Desktop Large (>= 1440px):** Full tri-panel multi-stream workspace; zero vertical canvas scroll on central map.
+  - **Desktop Standard (1024px - 1439px):** Map visualizer takes flex space, detail rail docks as overlay drawer.
+  - **Tablet & Compact (< 1024px):** Layout switches to stacked mode with tabbed switches between Map, Fleet Table, and Alert Center.
+- **Dense Grid Spacing:** Micro-paddings (`0.25rem` to `0.75rem`) allow dozens of driver rows and order entries to remain visible above the fold.
+
+## Elevation & Depth
+
+To preserve sharp technical clarity and maximize rendering performance during live vector map repaints, this system rejects soft decorative drop shadows in favor of **structural containment and crisp luminescent hairlines**.
+
+### Elevation Stack
+- **Base Canvas (Level 0):** `#0B0F17` — Ground level for map base tiles and canvas margins.
+- **Structural Paneling (Level 1):** `#111827` framed with a `1px solid #334155` border. No drop shadow.
+- **Floating Overlays (Level 2):** Modals, floating map HUD controls, driver popup pins, and context toolbars use `#1E293B` surrounded by `1px solid #475569`, backed by a sharp utility shadow (`0 8px 24px rgba(0, 0, 0, 0.65)`).
+- **Critical Attention Elevation (Alert Glow):** Active alerts and critical warning banners receive an interior glow or hairline boundary emission: `border: 1px solid #EF4444; box-shadow: 0 0 12px rgba(239, 68, 68, 0.25);`.
+
+## Shapes
+
+The design uses a restrained, compact shape system (`roundedness: 1`) to project technical rigor and geometric precision. Rounded edges are minimized to preserve horizontal and vertical tracking lines across grid-heavy layouts.
+
+### Corner Radius Implementation
+- **Panels, Windows, & Cards:** Fixed `0.25rem` (4px). Clean, technical edges that do not compromise corner data space.
+- **Interactive Controls (Inputs, Buttons, Dropdowns):** `0.25rem` (4px).
+- **Telemetry Chips & Status Badges:** `9999px` (Pill format). Pill silhouettes are strictly reserved for operational status badges (e.g., `ON TIME`, `DELAYED`, `SLA RISK`) to distinguish metadata flags from actionable square buttons.
+
+## Components
+
+### Buttons & Action Triggers
+- **Primary Action (Dispatch / Re-route):** Background `#10B981`, Text `#0B0F17` (Bold 600), radius `4px`, padding `6px 12px`. Hover: `#059669`.
+- **Secondary Action (Filter / Center View):** Background `#1E293B`, Text `#F8FAFC`, Border `1px solid #334155`. Hover: Background `#334155`.
+- **Destructive / SOS Override:** Background `#EF4444`, Text `#FFFFFF`, radius `4px`. Hover: `#DC2626`.
+
+### Status Badges & Telemetry Chips
+- **Structural Definition:** Pill-shaped (`rounded-full`), height `20px`, padding `0 8px`, typography `telemetry-sm`.
+- **Nominal Badge (`ON TIME`):** Background `rgba(16, 185, 129, 0.12)`, Border `1px solid #10B981`, Text `#10B981`. Includes a pulsing 6px circle beacon.
+- **Delayed Badge (`DELAYED`):** Background `rgba(245, 158, 11, 0.12)`, Border `1px solid #F59E0B`, Text `#F59E0B`.
+- **SLA Breach Badge (`CRITICAL`):** Background `rgba(239, 68, 68, 0.16)`, Border `1px solid #EF4444`, Text `#EF4444`.
+
+### High-Density Data Tables
+- **Table Container:** Surface `#111827`, border `1px solid #334155`.
+- **Header Row:** Height `32px`, Background `#0B0F17`, Typography `label-caps` in `#94A3B8`, border-bottom `1px solid #334155`.
+- **Data Rows:** Height `40px` default (or `32px` in compact mode). Alternating border bottom `1px solid rgba(51, 65, 85, 0.5)`. Hover row background `#1E293B`.
+- **Numerical Cells:** All distance, ETA, timestamp, and coordinate columns are rendered in `JetBrains Mono` with right alignment for fast optical comparisons.
+
+### Form Inputs & Telemetry Filters
+- **Input Fields:** Background `#0B0F17`, Border `1px solid #334155`, Text `#F8FAFC`, Height `32px`, Padding `0 10px`, Typography `body-md`. Focus state: Border `1px solid #06B6D4`, outline none.
+- **Checkboxes & Radios:** Sharp square/circle format, border `1px solid #475569`, background `#0B0F17`. Selected state: Solid fill with `#10B981`.
+
+### Map Floating HUD Cards
+- Embedded control clusters over live maps. 
+- Background `#111827` at `95%` opacity with backdrop blur `8px`. Border `1px solid #334155`.
+- Header section uses `JetBrains Mono` for live driver speed telemetry and battery level indicators.
